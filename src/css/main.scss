@@ -1,0 +1,89 @@
+$break-small: 500px;
+
+body {
+  background-color: #8EC5FC;
+  background-image: -webkit-linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  background-image: -moz-linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  background-image: -o-linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  height: 100%;
+  font-family: Arial;
+  background-attachment: fixed;
+  color: #757575;
+  font-size:100%;
+
+  @media screen and (max-width: $break-small) {
+    font-size: 14px;
+  }
+
+}
+
+//.city-state, .price {
+//  float:right;
+//  margin-left:10px;
+//
+//  @media screen and (max-width: $break-small) {
+//    float: none;
+//    display: block;
+//    margin-left:0;
+//  }
+//
+//}
+
+#react-root {
+  background-color: white;
+  max-width:500px;
+  padding:20px;
+  margin:40px auto;
+  border-radius: 5px;
+  min-height: 500px;
+}
+
+.booking-container {
+  overflow: auto;
+
+  h1, h2, h3, h4, h5 {
+    margin-left:5px;
+    font-weight: 500;
+    padding-bottom:10px;
+    border-bottom:2px solid #8EC5FC;
+    color:black;
+  }
+
+  .results-item {
+    display: flex;
+    .left {
+      flex:1;
+    }
+  }
+
+  ul {
+    margin:0;
+    padding:0;
+    li {
+      padding-left:5px;
+      padding-right:5px;
+      padding-bottom:10px;
+      padding-top:10px;
+      list-style: none;
+      border-bottom:1px solid #efefef;
+
+      &:hover {
+        background-color: #efefef;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.home-link {
+  background-image:url(../images/mytime_logo.png);
+  background-repeat: no-repeat;
+  height:34px;
+  width:110px;
+  display: block;
+  text-decoration: none;
+  background-size: contain;
+  margin:0 auto;
+}
+
