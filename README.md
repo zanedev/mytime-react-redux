@@ -2,6 +2,8 @@
 
 ## Install
 ```bash
+npm install
+- or -
 yarn
 ```
 
